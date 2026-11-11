@@ -1,0 +1,5 @@
+export default function ChatWidgetButton({ onToggle }) {
+  return (
+    <aside className="fixed bottom-space-lg right-margin z-40 flex items-center gap-space-sm bg-surface-container-lowest py-space-sm pl-space-md pr-space-lg rounded-full shadow-[0_8px_24px_rgba(0,0,0,0.14)] cursor-pointer group hover:bg-surface-container-low transition-colors" onClick={onToggle} role="button" tabIndex={0} onKeyDown={(e) => e.key === "Enter" && onToggle()}><div className="relative flex items-center justify-center"><div className="w-11 h-11 rounded-full bg-olive-gold-cta flex items-center justify-center text-on-primary font-bold"><span className="material-symbols-outlined text-2xl">support_agent</span></div><span className="absolute bottom-0 right-0 w-3 h-3 bg-tertiary-container rounded-full ring-2 ring-surface-container-lowest" /></div><div className="flex flex-col"><span className="font-card-tagline text-card-tagline font-medium text-near-black">👋 Chat with product specialist!</span><span className="font-announcement-text text-[11px] text-heading-gray uppercase">Ayurvedic Doctors Online</span></div></aside>
+  );
+}
